@@ -1,0 +1,12 @@
+nueva_muestra = [0.0, 10.8941, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+
+
+Esta muestra debe ser cargada como datos para que el modelo champion haga la prediccion
+
+ model = pickle.load(file)
+ model.predict([nueva_muestra])[0]
+ 
+ 
+ 
+  model = pickle.load(file)
+ model.predict([0.0, 10.8941, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0])[0]
