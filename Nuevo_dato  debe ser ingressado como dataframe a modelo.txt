@@ -1,0 +1,21 @@
+'Meses_contrato':[9]
+,'Total':[1000.1]
+,'Factura_mensual':[100.1]
+,'Contrato_mensual':[0]
+,'Pago_chequera_electronica':[0]
+,'Soporte_tecnico':[0]
+,'Seguridad_online':[0]
+,'Contrato_2_años':[1]
+,'Factura_online':[1]
+,'Contrato_1_año':[0]
+
+
+Todos los campos son en formato float
+
+
+df_nuevo_dato=pd.DataFrame(nuevo_dato)
+df_nuevo_dato
+
+# consulta de predicción con datos de entrada 
+int(model.predict(df_nuevo_dato)[0])
+salida  1
