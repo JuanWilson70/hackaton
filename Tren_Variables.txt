@@ -1,0 +1,48 @@
+REGIÓN: ubicación de cada cliente
+TENURE: tiempo en la red
+AMOUNT: importe de la recarga
+RECHARGE_FREQUENCY: número de recargas realizadas por el cliente
+REVENUE: ingresos mensuales de cada cliente
+ARPU_SEGMENT: ingresos durante 90 días / 3
+FREQUENCY: número de ingresos generados por el cliente
+DATA_VOLUME: número de conexiones
+ON_NET: llamada inter-expresso
+ORANGE: llamada a Orange
+TIGO: llamada a Tigo
+ZONE1: llamada a la Zona 1
+ZONE2: llamada a la Zona 2
+MRG: cliente que va
+REGULARITY: número de recargas realizadas por el cliente durante 90 días
+TOP_PACK: paquetes con mayor actividad
+FREQ_TOP_PACK: número de recargas realizadas por el cliente
+CHURN: variable a predecir - Objetivo
+
+
+VARIABLES ELEGIDAS
+'TIGO':'LLAMADAS_A_TIGO'
+,'ORANGE':'LLAMADAS_A_ORANGE'
+,'REGULARITY': 'NUM_RECARGAS_DEL_CLIENTE_90DIAS'
+,'FREQUENCE': 'NUM_INGRESOS_DEL_CLIENTE'
+,'FREQUENCE_RECH': 'NUM_RECARGAS_DEL_CLIENTE'
+,'ON_NET':'LLAMADA_INTER_EXPRESO'})
+
+
+
+Unicos-- valor minimo --- valor maximo
+LLAMADAS_A_TIGO=1317 -->  min=0.0 -- max=4174.0
+LLAMADAS_A_ORANGE=3169 -->  min=0.0 -- max=21323.0
+NUM_RECARGAS_DEL_CLIENTE_90DIAS=62 -->  min=1.0 -- max=62.0
+NUM_INGRESOS_DEL_CLIENTE=93 -->  min=1.0 -- max=91.0
+NUM_RECARGAS_DEL_CLIENTE=125 -->  min=1.0 -- max=133.0
+LLAMADA_INTER_EXPRESO=9885 -->  min=0.0 -- max=50809.0
+
+
+Datos de Prueba
+nuevo_dato = {
+'LLAMADAS_A_TIGO':[1317]
+,'LLAMADAS_A_ORANGE':[3169]
+,'NUM_RECARGAS_DEL_CLIENTE_90DIAS':[30]
+,'NUM_INGRESOS_DEL_CLIENTE':[50]
+,'NUM_RECARGAS_DEL_CLIENTE':[100]
+,'LLAMADA_INTER_EXPRESO':[9885]
+}
